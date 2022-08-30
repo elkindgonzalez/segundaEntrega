@@ -43,6 +43,21 @@ body{
     border-radius: 0.5rem;
 }
 
+@media (min-width: 480px) {
+    .boton {
+        width: auto;
+    } 
+}
+
+.sombra{
+    -webkit-box-shadow: 29px 31px 79px -35px rgba(0,0,0,0.75); /* Propiedades para chrome */
+    -moz-box-shadow: 29px 31px 79px -35px rgba(0,0,0,0.75);/* Propiedades para fireFox */
+    box-shadow: 29px 31px 79px -35px rgba(0,0,0,0.75);/*  */
+    background-color: var(--blanco);
+    padding: 2 rem;
+    border-radius: 1rem;
+}
+
 /*Tipografía*/
 
 h1 {
@@ -66,13 +81,6 @@ h3 {
 
 .titulo span{
     font-size: 2rem;
-}
-
-
-@media (min-width: 480px) {
-    .boton {
-        width: auto;
-    } 
 }
 
 /* Navegación principal */
@@ -115,6 +123,7 @@ h3 {
     background-size: cover;
     height: 70rem;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
@@ -139,7 +148,6 @@ h3 {
 }
 
 .formulario {
-    background-color:var(--grisClaro);
     position:relative;
     top: 20px;
     height: 300px;
