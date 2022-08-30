@@ -61,15 +61,15 @@ body{
 /*Tipografía*/
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 /* Títulos */
@@ -156,4 +156,41 @@ h3 {
 
 .mov {
     position: fixed;
+}
+
+/* Servicios */
+
+@media (min-width:768px) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;        
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: center;
+
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
