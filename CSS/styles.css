@@ -84,8 +84,15 @@ h1,h2,h3 {
 }
 
 /* Utilidades */
-.w-100{
+
+.w-sm-100{
     width: 100%;
+}
+
+@media (min-width:768px){
+    .w-sm-100{
+        width: 100%;
+    }
 }
 
 .flex{
@@ -225,8 +232,7 @@ h1,h2,h3 {
 .formulario {
     position:relative;
     top: 20px;
-    height: 300px;
-    border: 0.5px solid black;
+    
     width: min(60rem, 100%); /* Utiliza el valor más pequeño */
     margin: 0 auto;
 }
@@ -266,6 +272,4 @@ h1,h2,h3 {
     border-radius: .5rem;
 }
 
-.enviar .boton{
-    width: 100%;
-}
+ 
