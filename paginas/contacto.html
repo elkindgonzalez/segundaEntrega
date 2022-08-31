@@ -37,22 +37,31 @@
                 
         <div class="formulario sombra">
             <form action="">
-                <div>
-                    <label for="nombre-usuario">Nombre:</label>
-                    <input type="text" placeholder="Escribe tu nombre" name="nombre-usuario" id="nombre-usuario">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" placeholder="Número telefónico" name="telefono" id="telefono">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="Ingresa tu email" id="email">
-                </div>
+                <fieldset>
 
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    <legend>Contáctame</legend>
 
-                <input type="submit" value="Enviar">
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="nombre-usuario">Nombre:</label>
+                            <input type="text" placeholder="Escribe tu nombre" name="nombre-usuario" id="nombre-usuario">
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" placeholder="Número telefónico" name="telefono" id="telefono">
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email:</label>
+                            <input type="email" placeholder="Ingresa tu email" id="email">
+                        </div>
+
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="2" placeholder="Escribe tu mensaje"></textarea>
+                    </div> 
+                    <!-- Contenedor de los campos -->
+                    <div class="alinear derecha">
+                        <input class="boton w-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
 
             </form>
         </div>
